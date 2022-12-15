@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 0px;
     padding: 0;
     text-decoration: none;
     list-style:none ;
@@ -16,25 +16,39 @@
   font-weight: bold;
  
 }
+
+/*
+ .listes2{ 
+    position: absolute;
+    width:100%;
+    display: flex;
+    padding: 10px;
+   
+    justify-content: space-between;
+    top: auto;
+    left: 1px;
+   align-items: center;
+}
+*/
 .navbar{
     position: absolute;
-    margin: 30px;
+    margin: 20px;
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
     height: 80px;
     box-sizing: border-box;
     background-color: rgb(4, 44, 54);
 }
 .navbar .nav-links ul {
     float:right;
-    margin-right: 20px;
+    margin-right: 100px;
     display: flex;
 }
 .navbar .nav-links ul li {
    display: inline-block;
    line-height: 80px;
-    margin: 0 5px;
+    margin: 0 30px;
   
 }
 .navbar .nav-links ul li a{
@@ -56,32 +70,28 @@
     top: 200px;
 
 }
-nav .navbar2{ 
-    position: absolute;
-    width:100%;
-    display: flex;
-    padding: 10px;
-    justify-content: space-between;
-    top: 150px;
-    left: 1px;
-   align-items: center;
-}
+.space {
+    width: 5px;
+    height: auto;
+    display: inline-block;
+  }
+
 article .buttons{
    display: inline-flex;
    height: 50px;
    padding: 0;
    background-color: white;
-   border: none;
    outline: none;
-   border-radius: 5px;
    font-family: 'Quicksand',sans-serif;
    font-size: 14px;
    font-weight:bold ;
    cursor: pointer;
    position: absolute;
-  
-    
+   border: none;
+   border-radius: 25px;
+   margin-right:  20px;
 }
+
 article .buttons .button-icon{
     display: inline-flex;
     align-items: center;
@@ -97,6 +107,7 @@ article .buttons .button-text{
     position: center;
   
 }
+
 article  p1 {
     position: absolute;
     width:100% ;
@@ -147,21 +158,17 @@ article .buttonMove{
         display: none;
     }
 }
-@media(max-width: 1500px){
-    .container p1 p2 {
-        font-size: 6em;
-    }
-}
 
-@media(max-width: 700px){
-    .navbar .nav-links{
-       font-size: 0.9em; 
-    }
-}
 @media(max-width: 1300px){
-    .container{
+   .container {
+    flex-direction: column;
+   } 
+
+}
+@media(max-width: 600px){
+    .articl .buttons{
         flex-direction: column;
-        margin-top: 150px;
+       /* margin-top: 150px;*/
     }
     .main{
         flex-direction: column;
